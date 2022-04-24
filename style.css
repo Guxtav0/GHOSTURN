@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Permanent+Marker&display=swap');
+
+@keyframes pisca{
+    0% { opacity: 0.2}
+    50% { opacity: 1}
+    100% { opacity: 0.2}
+}
+body{
+    background: #282a36;
+    margin: 0;
+    padding: 0;
+    font-family:  'Montserrat', sans-serif;
+    display: grid;
+    place-items: center;
+
+}
+header{  
+    min-width: 100%;
+    background-color: #525e87;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.conteudo-topo{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h1{
+    color: #e441a3;
+}
+.logo span{
+    color: #13fa73;
+}
+.fa-brands{
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+.fa-brands:hover{
+    color: #13fa73;
+    font-size: 29px;
+    cursor: pointer;
+}
+.candidatos{
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
+.card{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial;
+    margin: 20px 25px;
+    width: 350px;
+    color: white;
+    background-color: #525e87;
+    border-radius: 999999px;
+    display: flex;
+}
+.imagem{
+    height: 150px;
+    align-items: center;
+    padding: 10px;
+}
+.imagem img{
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+}
+.texto{
+    align-items: center;
+    width: 250px;
+}
+.nome{
+    font-weight: bold;
+    font-size: 20px;
+    color: #13fa73;
+}
+
+
+section{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: arial, sans;
+    margin-top: 10px;
+}
+.urna{
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+.tela{
+    width: 450px;
+    height: 350px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 1px solid #555;
+    display: flex;
+    flex-direction: column;
+
+}
+.teclado{
+    background-color: #403a3a;
+    margin-left: 30px;
+}
+.teclado-linha{
+    display: flex;
+    justify-content: center;
+}
+.teclado-botao{
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+.botao-branco{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+.botao-corrige{
+    background-color: #f09046;
+    color: black;
+    font-size: 15px;
+    width: 75px;
+}.botao-confirma{
+    background-color: #48c079;
+    color: black;
+    font-size: 15px;
+    width: 90px;
+}
+
+
+.d-1{
+    flex: 1;
+    display: flex;
+}
+.d-1-esquerda{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.d-1-1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d-1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1-3{
+    height: 50px;
+}
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    align-items: center;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.d-1-4{
+    line-height: 30px;
+}
+.d-1-direita{
+    width: 90px;
+}
+.d-1-imagem{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+}
+.d-1-imagem img{
+    width: 100%;
+}
+.d-2{
+    height: 50px;
+    font-size: 15px;
+    border-top: 2px solid black;
+    padding-left:  10px;
+}
+
+.aviso-grande{
+    font-size: 30px;
+    font-weight: bold;
+}
+.fim{
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    margin-top: 30%;
+}
+.rodape {
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial;
+    margin-top: 5em;
+}
+.rodape a{
+    text-decoration: none;
+    color: #43b865;
+}
+@media only screen and (max-width: 850px){
+    header{  
+        min-width: 100%;
+        background-color: #525e87;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .conteudo-topo{
+        width: 80%;
+    }
+    .candidatos{
+        display: inline-block;
+    }
+    .urna{
+        display: inline-block;
+        margin: 0;
+    }
+    .teclado{
+        width: 450px;
+        margin: 0;
+    }
+
+}

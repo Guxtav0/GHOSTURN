@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang ="pt-BR">
+    <head>
+        <title>GHOSTURN</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="style.css";>
+        <script src="https://kit.fontawesome.com/50c5f5cb0f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="conteudo-topo">
+                <div class="logo">
+                    <h1>Ghost<span>Urn</span></h1>
+                </div>
+                <div class="icones">
+                    <a href="https://github.com/Guxtav0"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gustavo-dev-junior/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="candidatos"> 
+            <div class="vereadores">
+                <div class="card">
+                    <div class="imagem">
+                        <img src="imagens/VEREADOR1.png">
+                    </div>
+                    <div class="texto">
+                        <p class="nome">GUAXINIM</p>
+                        <p class="partido">Partido: GUA</p>
+                        <p class="num">Número: 99999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imagem">
+                        <img src="imagens/VEREADOR2.png">
+                    </div>
+                    <div class="texto">
+                        <p class="nome">RAPOSA</p>
+                        <p class="partido">Partido: ABA</p>
+                        <p class="num">Número: 10101</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prefeitos">
+                <div class="prefeito card">
+                    <div class="imagem">
+                        <img src="imagens/PREFEITO1.png">
+                    </div>
+                    <div class="texto">
+                        <p class="nome">LEÃO</p>
+                        <p class="vice">Vice-Prefeito: Foca</p>
+                        <p class="partido">Partido: LFQ</p>
+                        <p class="num">Número: 13</p>
+                    </div>
+                </div>
+                <div class="prefeito card">
+                    <div class="imagem">
+                        <img src="imagens/PREFEITO2.png">
+                    </div>
+                    <div class="texto"><p class="nome">ONÇA</p>
+                        <p class="vice">Vice-Prefeito: Urso</p>
+                        <p class="partido">Partido: SELVA</p>
+                        <p class="num">Número: 44</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="urna">
+                <div class="tela">
+                    <div class="d-1">
+                        <div class="d-1-esquerda">
+                            <div class="d-1-1">
+                                <span>SEU VOTO PARA:</span>
+                            </div>
+                            <div class="d-1-2">
+                                <span>VEREADOR</span>
+                            </div>
+                            <div class="d-1-3">
+                                <div class="numero pisca"></div>
+                                <div class="numero"></div>
+                            </div>
+                            <div class="d-1-4">
+                                Nome: Fulaninho<br>
+                                Partido: Partidinho<br>
+                                Vice: Beltraninho<br>
+                            </div>
+                        </div>
+                        <div class="d-1-direita">
+                            <div class="d-1-imagem">
+                                <img src="imagens/PREFEITO1.png">
+                                Prefeito 
+                            </div>
+                            <div class="d-1-imagem">
+                                <img src="imagens/PREFEITO2.png">
+                                Vice-Prefeito 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-2">
+                        Aperte a tela:<br>
+                        CONFIRMA para CONFIRMAR este voto <br>
+                        CORRIGE para REINICIAR este voto
+                    </div>
+                </div>
+                <div class="teclado">
+                    <div class="teclado-linha">
+                        <div class="teclado-botao" onclick="clicou('1')">1</div>
+                        <div class="teclado-botao" onclick="clicou('2')">2</div>
+                        <div class="teclado-botao" onclick="clicou('3')">3</div>
+                    </div>
+                    <div class="teclado-linha">
+                        <div class="teclado-botao"onclick="clicou('4')">4</div>
+                        <div class="teclado-botao"onclick="clicou('5')">5</div>
+                        <div class="teclado-botao"onclick="clicou('6')">6</div>
+                    </div>
+                    <div class="teclado-linha">
+                        <div class="teclado-botao"onclick="clicou('7')">7</div>
+                        <div class="teclado-botao"onclick="clicou('8')">8</div>
+                        <div class="teclado-botao"onclick="clicou('9')">9</div>
+                    </div>
+                    <div class="teclado-linha">
+                        <div class="teclado-botao"onclick="clicou('0')">0</div>
+                    </div>
+                    <div class="teclado-linha">
+                        <div class="teclado-botao botao-branco" onclick="branco()">BRANCO</div>
+                        <div class="teclado-botao botao-corrige" onclick="corrige()">CORRIGE</div>
+                        <div class="teclado-botao botao-confirma" onclick="confirma()">CONFIRMA</div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="etapas.js"></script>
+            <script src="script.js"></script>
+        </section>    
+        <p class = 'rodape'>Trabalho retirado de uma live do canal Boniekly Lacerda, <a href="https://www.youtube.com/watch?v=hF_VMWnsY00&t=5190s"><br>Clique aqui para visualizar.</a></p>
+    </body>
+
+</html>

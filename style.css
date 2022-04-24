@@ -96,7 +96,7 @@ section{
 .tela{
     width: 450px;
     height: 350px;
-    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    background: #e8e8e8;
     border: 1px solid #555;
     display: flex;
     flex-direction: column;
